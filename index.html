@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Application</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="/dist/output.css">
+
+    <!--FONT AWSOME-->
+    <script src="https://kit.fontawesome.com/0e4449550a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!--TEXT TO SPEECH CONTAINER-->
+    <div class="flex flex-col justify-center items-center h-screen gap-5 md:gap-10">
+
+        <!--TITLE OR HEADER-->
+        <h1 class="font-mono font-semibold text-slate-900 text-xl">Text to Speech</h1>
+
+        <!--TEXT TO SPEECH FORM-->
+        <div class="bg-slate-600 flex flex-col justify-center items-center gap-5 p-8 rounded-md">
+            <textarea id="textArea"
+                class="w-60 h-32 text-sm text-slate-900 p-2 font-sans placeholder:tracking-widest md:w-80 md:h-48 lg:w-96 lg:h-56"
+                placeholder="Enter Text...">Hello World!</textarea>
+            <button id="speakButton" type="button"
+                class="bg-slate-900 text-sm text-slate-300 font-mono font-semibold w-60 py-2 rounded-sm border-none cursor-pointer hover:bg-slate-400 hover:text-slate-900 hover:duration-300 md:w-80 lg:w-96">Speak</button>
+        </div>
+
+        <!--FOOTER-->
+        <footer class="flex flex-col justify-center items-center gap-5">
+            <h1 class="font-mono font-semibold text-sm md:text-md lg:text-lg text-slate-900 text-center pt-14 md:pt-20">
+                Implemented
+                by: John Carlo P. Jacobe</h1>
+            <div class="flex items-center gap-2 text-sm md:text-md lg:text-lg text-slate-900">
+                <a href="https://www.facebook.com/akosijcjacobe" target="_blank"><i
+                        class="fab fa-facebook hover:text-[#1877F2] transition-all duration-500 ease-in-out"></i></a>
+                <a href="https://twitter.com/JCJacobe2" target="_blank"><i
+                        class="fab fa-twitter hover:text-[#1D9BF0] transition-all duration-500 ease-in-out"></i></a>
+                <a href="https://www.instagram.com/jcjacobe2/" target="_blank"><i
+                        class="fab fa-instagram hover:bg-gradient-to-r from-[#515BD4] via-[#8134AF] via-[#DD2A7B] via-[#FEDA77] to-[#F58529] transition-all duration-500 ease-in-out"></i></a>
+                <a href="https://github.com/JCJ02" target="_blank"><i
+                        class="fab fa-github hover:text-[#000000] transition-all duration-500 ease-in-out"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script type="application/javascript" src="/src/index.js"></script>
+
+</body>
+
+</html>
